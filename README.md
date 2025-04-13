@@ -44,9 +44,11 @@ https://github.com/DARKSILENCE04/DARK-SILENCE-MD
   
 
   
---- 
+----
 
-<a><img src='https://files.catbox.moe/ycn349'/></a>
+![Image](https://github.com/user-attachments/assets/d406a295-1b68-407a-9d0d-7c55b4be8d7d)
+
+----
 
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
