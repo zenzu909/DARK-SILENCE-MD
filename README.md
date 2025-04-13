@@ -2,7 +2,7 @@
 
 -----------
 
-![Image](https://github.com/user-attachments/assets/d31defb2-048f-42a6-9412-8a70a2455465)
+![Image](https://github.com/user-attachments/assets/c9f274a2-09d5-465b-a7cb-59d287c193e6)
 
 -----------
 -----------
@@ -50,37 +50,42 @@ https://github.com/DARKSILENCE04/DARK-SILENCE-MD
 
 ----
 
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
+<img src="https://i.imgur.com/dBaSKWF.gif" height="90" width="100%">
 
-***
+----------
 
+### <br>01.  ❖ FORK DARK-SILENCE-MD ❖
 
-
-
-### <br>1.  ❖ FORK DARK-SILENCE-MD❖
+-----------
 
 **`FORK 🍴 AND STAR ⭐ DARK-SILENCE-MD`**
 
   <a href="https://github.com/DARKSILENCE04/DARK-SILENCE-MD/fork"><img title="DARK-SILENCE-MD" src="https://img.shields.io/badge/FORK-DARK%20SILENCE%20MD-BOTh?color=indigo&style=for-the-badge&logo=stackshare"></a>
   
-### 2. 𐃁GET SESSION ID𐃁 
+### <br>02.  ❖ GET SESSION-I'D ❖
 
-`IF YOU DON'T HAVE YOUR SESSION_ID SO U CAN GET IT CLICK ON SESSION_ID BUTTON AND PASTE YOUR NUMBER With COUNTRY CODE EXAMPLE:92300xxxxxx THEN YOU CAN GET YOUR SESSION_ID ✠`
+`✠ IF YOU DON'T HAVE YOUR SESSION_ID SO U CAN GET IT CLICK ON SESSION_ID BUTTON AND PASTE YOUR NUMBER With COUNTRY CODE EXAMPLE:92309xxxxxx THEN YOU CAN GET YOUR SESSION_ID ✠`
 
 
 > **1. PAIR CODE SESSION ID**
 
-<a href='https://ali-md.onrender.com/' target="_blank">
-  <img alt='Pairing Code' src='https://img.shields.io/badge/Get%20Pairing%20Code-orange?style=for-the-badge&logo=opencv&logoColor=black'/>
+----------
+
+<p align="center">
+<a href='https://pair-lover.onrender.com' target="_blank">
+  <img alt='Pairing Code' src='https://img.shields.io/badge/Get%20Session%20id-FF0000?style=for-the-badge&logo=opencv&logoColor=black'/>
 </a>
-<br> 
 
 > **2. PAIR CODE SESSION ID**
 
-<a href='https://ali-md-72003ad89817.herokuapp.com' target="_blank">
-  <img alt='Pairing Code' src='https://img.shields.io/badge/Get%20Pairing%20Code-darkpink?style=for-the-badge&logo=opencv&logoColor=black'/>
+----------
+
+<p align="center">
+<a href='https://pair-lover.onrender.com' target="_blank">
+  <img alt='Pairing Code' src='https://img.shields.io/badge/Get%20Session%20id-0000FF?style=for-the-badge&logo=opencv&logoColor=black'/>
 </a>
-<br> 
+ 
+----------
 
 
 
