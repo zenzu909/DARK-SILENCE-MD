@@ -91,7 +91,7 @@ https://github.com/DARKSILENCE04/DARK-SILENCE-MD
 
 ---
 
-### <h2 align="">𐃁ALI-MD DEPLOYMENT OPTIONS𐃁</h2>
+### <h2 align="">❖ DARK-SILENCE-MD DEPLOYMENT OPTIONS ❖</h2>
 
 ---
 
@@ -99,21 +99,21 @@ https://github.com/DARKSILENCE04/DARK-SILENCE-MD
 <p style="text-align: center; font-size: 1.2em;">
 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/itx-alii-raza/ALI-MD)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/DARKSILENCE04/DARK-SILENCE-MD)
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
 ### <h4 align="">3. KOYEB</h4>
 <p style="text-align: center; font-size: 1.2em;">
 
 <p align="">
-<a href='https://app.koyeb.com/services/deploy?type=git&repository=itx-alii-raza/ALI-MD&ports=3000&env[PREFIX]=.&env[SESSION_ID]=&env[ALWAYS_ONLINE]=false&env[MODE]=public&env[AUTO_STATUS_MSG]=Seen%20status%20by%20ALI-MD&env[AUTO_STATUS_REPLY]=false&env[AUTO_STATUS_SEEN]=true&env[AUTO_TYPING]=false&env[ANTI_LINK]=true&env[AUTO_REACT]=false&env[READ_MESSAGE]=false' target="_blank"><img alt='Heroku' src='https://img.shields.io/badge/-koyeb ‎ deploy-FF009D?style=for-the-badge&logo=koyeb&logoColor=white'/< width=150 height=28/p></a>
+<a href='https://app.koyeb.com/services/deploy?type=git&repositoryDARKSILENCE04/DARK-SILENCE-MD&ports=3000&env[PREFIX]=.&env[SESSION_ID]=&env[ALWAYS_ONLINE]=false&env[MODE]=public&env[AUTO_STATUS_MSG]=Seen%20status%20by%20ALI-MD&env[AUTO_STATUS_REPLY]=false&env[AUTO_STATUS_SEEN]=true&env[AUTO_TYPING]=false&env[ANTI_LINK]=true&env[AUTO_REACT]=false&env[READ_MESSAGE]=false' target="_blank"><img alt='Heroku' src='https://img.shields.io/badge/-koyeb ‎ deploy-FF009D?style=for-the-badge&logo=koyeb&logoColor=white'/< width=150 height=28/p></a>
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
 ### <h4 align="">2. TALKDROVE FREE</h4>
 <p style="text-align: center; font-size: 1.2em;">
   
 <p align="">
-<a href='https://talkdrove.com/share-bot/11' target="_blank"><img alt='Heroku' src='https://img.shields.io/badge/-TalkDrove ‎Deploy-6971FF?style=for-the-badge&logo=Github&logoColor=white'/< width=150 height=28/p></a>
+<a href='https://talkdrove' target="_blank"><img alt='Heroku' src='https://img.shields.io/badge/-TalkDrove ‎Deploy-6971FF?style=for-the-badge&logo=Github&logoColor=white'/< width=150 height=28/p></a>
   <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
 ### <h4 align="">4. RAILWAY</h4>
@@ -128,53 +128,6 @@ https://github.com/DARKSILENCE04/DARK-SILENCE-MD
   
 <p align="">
 <a href='https://dashboard.render.com/web/new' target="_blank"><img alt='Heroku' src='https://img.shields.io/badge/-Render deploy-black?style=for-the-badge&logo=render&logoColot=white'/< width=150 height=28/p></a>
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-
-### <h4 align="">6. HUGGING FACE</h4>
-<p style="text-align: center; font-size: 1.2em;">
-  
-<p align="">
-<a href='https://app.netlify.com/' target="_blank"><img alt='Netlify' src='https://img.shields.io/badge/-Netlify Deploy-CC00FF?style=for-the-badge&logo=huggingface&logoColor=white'/< width=150 height=28/p></a> </a>
-<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
-<details>
-  
-<b><strong><summary align="" style="color: Yello;">EASIEST METHOD 2</summary></strong></b>
-<p style="text-align: center; font-size: 1.2em;">
- 
-
-## <h3 align=""> HOW TO DEPLOY ON HUGGING FACE</h3>
-<h6 align-"center">
-*❄️ Deploy ali-md On Hugging Face For Free !*
-
-`Specs :`
-- v2 CPU
-- 16GB RAM
-
-> `Steps to deploy`
-
-`Step 1`
-1. Go to hugginface.co/join and create an account and verify your email too.
-
-`Step 2`
-1. Go to https://huggingface.co/spaces/itx-alii-raza/ALI-MD
-
-2. Tap on *three dots* _(as shown in image)_
-
-3. Tap on *duplicate space* _(as shown in image)_
-
-`Step 3`
-1. Fill your details, e.g., Session ID, Bot Name, owner number etc...
-
-2. Tap on *duplicate space shown below*
-
-```After that wait 10 seconds & your have deployed it successfuly  for free 24/7```
-
-> CREDITS PIKABOTZ🎐
-
-*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍʀ ꜰʀᴀɴᴋ ᴏꜰᴄ*</h6>
-
-</details>
-
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
 
