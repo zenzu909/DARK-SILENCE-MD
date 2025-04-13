@@ -54,7 +54,7 @@ https://github.com/DARKSILENCE04/DARK-SILENCE-MD
 
 **`FORK 🍴 AND STAR ⭐ DARK-SILENCE-MD`**
 
-  <a href="https://github.com/DARKSILENCE04/DARK-SILENCE-MD/fork"><img title="DARK-SILENCE-MD" src="https://img.shields.io/badge/FORKDARKSILENCE%20MDh?color=indigo&style=for-the-badge&logo=stackshare"></a>
+  <a href="https://github.com/DARKSILENCE04/DARK-SILENCE-MD/fork"><img title="DARK-SILENCE-MD" src="https://img.shields.io/badge/FORK-DARK%20SILENCE%20MD-BOTh?color=indigo&style=for-the-badge&logo=stackshare"></a>
   
 ### 2. 𐃁GET SESSION ID𐃁 
 
