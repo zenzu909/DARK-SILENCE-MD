@@ -140,26 +140,21 @@ https://github.com/DARKSILENCE04/DARK-SILENCE-MD
 
 
 ## 👑 PROJECT OWNER 
-HII DEARS FRIENDS IF YOU WANT ANY HELP SO YOU CAN CONTACT↘︎ WITH ME WIA WHATSAPP ITS ME ALI࿐➺
+`HII DEARS FRIENDS IF YOU WANT ANY HELP SO YOU CAN CONTACT↘︎ WITH ME WIA WHATSAPP ITS ME ♡SILENT LOVER⁴³²࿐➺`
 
 <p align="">
-<a href='https://wa.me/+923003588997?text=*ʜɪɪ+ᴀʟɪ+ɪ+ɴᴇᴇᴅ+ʜᴇʟᴘ!.+ɪ+ᴍᴇssᴀɢᴇᴅ+ʏᴏᴜ+ғʀᴏᴍ+ᴀʟɪ-ᴍᴅ+ʀᴇᴘᴏ!!*' target="_blank"><img alt='Replit' src='https://img.shields.io/badge/ Whatsapp -25D366?style=for-the-badge&logo=whatsapp&logoColor=white'/< width=150 height=28/p></a> </a>
+<a href='https://wa.me/+923096287432?text=*HII+SIR+I+NEDD+HELP!.+I'M+MSG+YOU+FROM+DARK-SILENCE+MD!!*' target="_blank"><img alt='Replit' src='https://img.shields.io/badge/ Whatsapp -25D366?style=for-the-badge&logo=whatsapp&logoColor=white'/< width=150 height=28/p></a> </a>
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
 
-## 🪀 WHATSAPP CHANNEL 
+## 📲 WHATSAPP CHANNEL 
 STAY CONNECTED WITH THE LATEST UPDATES AND COMMUNITY BY JOINING OUR OFFICIAL WHATSAPP GROUP AND CHANNEL. YOU CAN ALSO CONTACT THE OWNER DIRECTLY.
 
-[![WhatsApp Channel](https://img.shields.io/badge/JOIN-WHATSAAP%20CHANNEL-25D366?style=for-the-badge&logo=whatsapp)](https://whatsapp.com/channel/0029VaoRxGmJpe8lgCqT1T2h)
+[![WhatsApp Channel](https://img.shields.io/badge/JOIN-WHATSAAP%20GROUP-25D366?style=for-the-badge&logo=whatsapp)]
 
-## 🪀 WHATSAPP GROUP
-JOINING OUR OFFICIAL WHATSAPP GROUP AND CHANNEL. YOU CAN ALSO CONTACT THE OWNER DIRECTLY.
-
-[![WhatsApp Group](https://img.shields.io/badge/JOIN-WHATSAAP%20GROUP-25D366?style=for-the-badge&logo=whatsapp)](https://chat.whatsapp.com/Lx7sDv7jSy0CCTm5AliPdq)
+---------
 
  
-
-
 ***
 
 ## <h2 align="left">⚠️ REMINDER </h2>
@@ -183,13 +178,13 @@ JOINING OUR OFFICIAL WHATSAPP GROUP AND CHANNEL. YOU CAN ALSO CONTACT THE OWNER 
  
  ---
 
-<h3 align="center"> DON'T COPY WITHOUT PERMISSION 
+<h3 align="center"> DON'T USE DARK-SILENCE-MD SCRIPT WITHOUT PERMISSION OF SILENT LOVER
 </h3>
 
 <br>
 
 ```
-THANK YOU TOHID, JAWAD, KERM & YOU SUPPORTERS
+THANKS TO DARK,DEVIL,SOBIABUTT,SILENTKILLER,NOTHING,SPECIAL THANKS 😊 CYBER,X TEAM FOR SCRIPT❤️
 ```
 -----
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
