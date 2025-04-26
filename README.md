@@ -120,7 +120,7 @@ https://github.com/DARKSILENCE04/DARK-SILENCE-MD
 <table align="center">
   <tr>
     <td>
-      <a href="```hj```" target="_blank">
+      <a href="https://whatsapp.com/channel/0029VaHO5B0G3R3cWkZN970s/3616" target="_blank">
         <img alt="View Workflow Codes" src="https://img.shields.io/badge/View-Workflow%20Codes-FF0076?style=for-the-badge&logo=githubactions&logoColor=white"/>
       </a>
     </td>
@@ -131,6 +131,46 @@ https://github.com/DARKSILENCE04/DARK-SILENCE-MD
   <img src="https://github.com/DARKSILENCE04/DARK-SILENCE-MD/blob/main/assets/techwave.gif?raw=true" width="100%"/>
 </div>
 
+**NOTE:-** ***✠ YOU CAN ALSO COPY THIS CODE IF CHANNEL CODE EXPIRED FOR FREE DEPLOYMENT OF DARK-SILENCE-MD ✠***
+
+```
+name: Node.js CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [20.x]
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Start application
+      run: npm start
+```
+
+-------
+
 
 ## 👑 ✠ PROJECT OWNER ✠
 `HII DEARS FRIENDS IF YOU WANT ANY HELP SO YOU CAN CONTACT↘︎ WITH ME WIA WHATSAPP ITS ME ♡SILENT LOVER⁴³²࿐➺`
@@ -140,7 +180,7 @@ https://github.com/DARKSILENCE04/DARK-SILENCE-MD
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
 
-## ⚖️ ✠ WHATSAPP CHANNEL ✠
+## ⚖️ ✠ SUPPORT CHANNEL ✠
 `✠ STAY CONNECTED WITH THE LATEST UPDATES AND COMMUNITY OF DARK-SILENCE-MD BY JOINING OUR OFFICIAL WHATSAPP CHANNEL.✠`
 
 
