@@ -23,21 +23,23 @@ https://github.com/DARKSILENCE04/DARK-SILENCE-MD
 ---
 
 
-
-
-
-  <p align="center">
-<a href="https://github.com/DARKSILENCE04/followers"><img title="FOLLOWERS" src="https://img.shields.io/github/followers/DARKSILENCE04?color=blue&style=flat-square"></a>
-<a href="https://github.com/DARKSILENCE04/DARK-SILENCE-MD/stargazers/"><img title="STARS" src="https://img.shields.io/github/stars/DARKSILENCE04/DARK-SILENCE-MD?color=blue&style=flat-square"></a>
-<a href="https://github.com/DARKSILENCE04/DARK-SILENCE-MD/network/members"><img title="Forks" src="https://img.shields.io/github/forks/DARKSILENCE04/DARK-SILENCE-MD?color=blue&style=flat-square"></a>
-<a href="https://github.com/DARKSILENCE04/DARK-SILENCE-MD/"><img title="Size" src="https://img.shields.io/github/repo-size/DARKSILENCE04/DARK-SILENCE-MD?style=flat-square&color=green"></a>
-<a href="https://github.com/DARKSILENCE04/DARK-SILENCE-MD/graphs/commit-activity"><img height="20" src="https://img.shields.io/badge/Maintained%3F-YES-green.svg"></a>&nbsp;&nbsp;
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=600&size=25&duration=4000&pause=1000&color=00F7FF&center=true&vCenter=true&width=500&lines=DARK-SILENCE-MD;+WHATSAPP+BOT;MULTI-DEVICE+SUPPORT;POWERED+BY+SILENTLOVER432;FAST++SECURE++RELIABLE" alt="Animated Typing SVG" />
 </p>
-<p align='center'>
-  <img <a
-    src="https://img.shields.io/static/v1?label=OWNER&message=SILENT%20LOVER432&color=blue&style=plastic" alt="Developer Badge">
 
+<div align="center">
+  <a href="https://github.com/DARKSILENCE04/followers"><img title="Followers" src="https://img.shields.io/github/followers/DARKSILENCE04?color=EB5406&style=for-the-badge&logo=github&logoColor=white"></a>
+  <a href="https://github.com/DARKSILENCE04/DARK-SILENCE-MD/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/DARKSILENCE04/DARK-SILENCE-MD?color=FFCE44&style=for-the-badge&logo=reverbnation&logoColor=white"></a>
+  <a href="https://github.com/DARKSILENCE04/DARK-SILENCE-MD/network/members"><img title="Forks" src="https://img.shields.io/github/forks/DARKSILENCE04/DARK-SILENCE-MD?color=FF007F&style=for-the-badge&logo=git&logoColor=white"></a>
+  <a href="https://github.com/DARKSILENCE04/DARK-SILENCE-MD/"><img title="Size" src="https://img.shields.io/github/repo-size/DARKSILENCE04/DARK-SILENCE-MD?style=for-the-badge&color=FFFF33&logo=docusign&logoColor=white"></a>
+  <a href="https://github.com/DARKSILENCE04/DARK-SILENCE-MD/graphs/commit-activity"><img height="28" src="https://img.shields.io/badge/Maintained%3F-SILENTLOVER-green.svg?style=for-the-badge&logo=gitpod&logoColor=white"></a>
+</div>
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=DARK-SILENCE-MD&label=VISITORS&style=flat-square&color=0002FF" />
 </p>
+
+---------
 
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=50&pause=1000&color=1BAFBAFF&center=true&width=810&height=100&lines=+DARK-SILENCE-MD;IS+THE+UPDATE+VERSION;OF+SILENT-SOBX-MD;BEST+MULTI+DEVICE+BOT;CREATED+BY+SILENTLOVER+432" alt="Typing SVG" /></a>
   </p>
@@ -148,7 +150,7 @@ https://github.com/DARKSILENCE04/DARK-SILENCE-MD
 
 
 ## 📲 WHATSAPP CHANNEL 
-STAY CONNECTED WITH THE LATEST UPDATES AND COMMUNITY OF DARK-SILENCE-MD BY JOINING OUR OFFICIAL WHATSAPP GROUP AND CHANNEL. YOU CAN ALSO CONTACT THE OWNER DIRECTLY.
+`✠ STAY CONNECTED WITH THE LATEST UPDATES AND COMMUNITY OF DARK-SILENCE-MD BY JOINING OUR OFFICIAL WHATSAPP CHANNEL.✠`
 
 
 [![WhatsApp Channel](https://img.shields.io/badge/JOIN-WHATSAAP%20CHANNEL-25D366?style=for-the-badge&logo=whatsapp)](https://whatsapp.com/channel/0029VaHO5B0G3R3cWkZN970s)
@@ -161,15 +163,15 @@ STAY CONNECTED WITH THE LATEST UPDATES AND COMMUNITY OF DARK-SILENCE-MD BY JOINI
 ## <h2 align="left">⚠️ REMINDER </h2>
 <p style="text-align: center; font-size: 1.2em;">
 
-- **DISCLAIMER:** THIS BOT IS NOT AFFILIATED WITH `WhatsApp Inc.`. USE IT AT YOUR OWN RISK.
+- **WARNING:** DARK-SILENCE-MD IS NOT AFFILIATED WITH `WhatsApp Inc.`. USE IT AT YOUR OWN RISK.
 - MISUSING THE BOT MAY RESULT IN YOUR `WhatsApp` ACCOUNT BEING BANNED. NOTE THAT YOU CAN ONLY UNBAN YOUR ACCOUNT ONCE.
-- I AM NOT RESPONSIBLE FOR ANY BANS OR MISUSE OF THE BOT. PLEASE KEEP THIS WARNING IN MIND BEFORE PROCEEDING.
+- I AM NOT RESPONSIBLE FOR ANY BANS OR MISUSE OF THE BOT. PLEASE KEEP THIS WARNING IN MIND BEFORE PROCEEDING THANKS FOR USING DARK-SILENCE-MD ❤️.
 
 ---
 
 <h2 align="left">ℹ️ NOTICE</h2>
 <p style="text-align: center; font-size: 1.2em;">
-  NOT FOR SALE - IF ANY PLUGIN'S CODE IS OBFUSCATED, YOU DO NOT HAVE PERMISSION TO EDIT IT IN ANY FORM. PLEASE REMEMBER TO GIVE CREDIT IF YOU ARE USING OR RE-UPLOADING MY PLUGINS/FILES. WISHING YOU A WONDERFUL DAY AHEAD!</p>
+ NOT FOR SALE - IF ANY PLUGIN'S CODE IS OBFUSCATED, YOU DO NOT HAVE PERMISSION TO EDIT IT IN ANY FORM. PLEASE REMEMBER TO GIVE CREDIT IF YOU ARE USING OR RE-UPLOADING MY PLUGINS/FILES. WISHING YOU A WONDERFUL DAY AHEAD!</p>
   
 ---
 
@@ -179,7 +181,7 @@ STAY CONNECTED WITH THE LATEST UPDATES AND COMMUNITY OF DARK-SILENCE-MD BY JOINI
  
  ---
 
-<h3 align="center"> DON'T USE DARK-SILENCE-MD SCRIPT WITHOUT PERMISSION OF SILENT LOVER
+<h3 align="center"> DON'T USE DARK-SILENCE-MD SCRIPT WITHOUT PERMISSION OF © SILENT LOVER⁴³²
 </h3>
 
 <br>
