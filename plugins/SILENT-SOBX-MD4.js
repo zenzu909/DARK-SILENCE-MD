@@ -380,7 +380,7 @@ let madeMenu = `
 
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━•⟢
 
-> *https://github.com/SILENTLOVER40/SILENT-SOBX-MD_V2*
+> *https://github.com/DARKSILENCE04/DARK-SILENCE-MD*
 
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━•⟢
 
