@@ -162,47 +162,53 @@ async (conn, mek, m, { from, reply }) => {
         const startTime = new Date(Date.now() - process.uptime() * 1000);
         
         // Style 1: Classic Box
-        const style1 = `╭───『 UPTIME 』───⳹
+        const style1 = `╭───『 DARK-SILENCE-MD UPTIME 』───⳹
 │
 │ ⏱️ ${uptime}
 │
 │ 🚀 Started: ${startTime.toLocaleString()}
 │
+│ ♻️PLATFORM: ${process.env.DYNO ? "Heroku" : "Localhost"}
+│
 ╰────────────────⳹
-${config.DESCRIPTION}`;
+${config.CAPTION}`;
 
         // Style 2: Minimalist
-        const style2 = `•——[ UPTIME ]——•
+        const style2 = `•——[ DARK-SILENCE-MD UPTIME ]——•
   │
   ├─ ⏳ ${uptime}
   ├─ 🕒 Since: ${startTime.toLocaleTimeString()}
+  ├─ ♻️PLATFORM: ${process.env.DYNO ? "Heroku" : "Localhost"}
   │
   •——[ ${config.BOT_NAME} ]——•`;
 
         // Style 3: Fancy Borders
-        const style3 = `▄▀▄▀▄ BOT UPTIME ▄▀▄▀▄
+        const style3 = `▄▀▄▀▄ DARK-SILENCE-MD UPTIME ▄▀▄▀▄
 
   ♢ Running: ${uptime}
   ♢ Since: ${startTime.toLocaleDateString()}
+  ♢ PLATFORM: ${process.env.DYNO ? "Heroku" : "Localhost"}
   
   ${config.DESCRIPTION}`;
 
         // Style 4: Code Style
         const style4 = `┌──────────────────────┐
-│  ⚡ UPTIME STATUS ⚡  │
+│  ⚡DARK-SILENCE-MD UPTIME STATUS ⚡  │
 ├──────────────────────┤
 │ • Time: ${uptime}
 │ • Started: ${startTime.toLocaleString()}
+│ • PLATFORM: ${process.env.DYNO ? "Heroku" : "Localhost"}
 │ • Version: 4.0.0
 └──────────────────────┘`;
 
         // Style 5: Modern Blocks
-        const style5 = `▰▰▰▰▰ UPTIME ▰▰▰▰▰
+        const style5 = `▰▰▰▰▰ DARK-SILENCE-MD UPTIME ▰▰▰▰▰
 
   ⏳ ${uptime}
   🕰️ ${startTime.toLocaleString()}
+  ♻️PLATFORM: ${process.env.DYNO ? "Heroku" : "Localhost"}
   
-  ${config.DESCRIPTION}`;
+  ${config.CAPTION}`;
 
         // Style 6: Retro Terminal
         const style6 = `╔══════════════════════╗
@@ -210,29 +216,32 @@ ${config.DESCRIPTION}`;
 ╠══════════════════════╣
 ║ > RUNTIME: ${uptime}
 ║ > SINCE: ${startTime.toLocaleString()}
+║ > PLATFORM: ${process.env.DYNO ? "Heroku" : "Localhost"}
 ╚══════════════════════╝`;
 
         // Style 7: Elegant
         const style7 = `┌───────────────┐
-│  ⏱️  UPTIME  │
+│  ⏱️ DARK-SILENCE-MD UPTIME  │
 └───────────────┘
 │
 │ ${uptime}
 │
 │ Since ${startTime.toLocaleDateString()}
 │
+│ PLATFORM: ${process.env.DYNO ? "Heroku" : "Localhost"}
+│
 ┌───────────────┐
 │  ${config.BOT_NAME}  │
 └───────────────┘`;
 
         // Style 8: Social Media Style
-        const style8 = `⏱️ *Uptime Report* ⏱️
+        const style8 = `⏱️ *DARK-SILENCE-MD UPTIME REPORT* ⏱️
 
 🟢 Online for: ${uptime}
 📅 Since: ${startTime.toLocaleString()}
+♻️PLATFORM: ${process.env.DYNO ? "Heroku" : "Localhost"}
 
-${config.DESCRIPTION}`;
-
+${config.CAPTION}`;
         // Style 9: Fancy List
         const style9 = `╔♫═⏱️═♫══════════╗
    ${config.BOT_NAME} UPTIME
@@ -241,6 +250,7 @@ ${config.DESCRIPTION}`;
 •・゜゜・* ✧  *・゜゜・•
  ✧ ${uptime}
  ✧ Since ${startTime.toLocaleDateString()}
+ ✧ PLATFORM: ${process.env.DYNO ? "Heroku" : "Localhost"}
 •・゜゜・* ✧  *・゜゜・•`;
 
         // Style 10: Professional
@@ -250,10 +260,11 @@ ${config.DESCRIPTION}`;
 
 ◈ Duration: ${uptime}
 ◈ Start Time: ${startTime.toLocaleString()}
+✧ PLATFORM: ${process.env.DYNO ? "Heroku" : "Localhost"}
 ◈ Stability: 100%
 ◈ Version:  4.0.0
 
-${config.DESCRIPTION}`;
+${config.CAPTION}`;
 
         const styles = [style1, style2, style3, style4, style5, style6, style7, style8, style9, style10];
         const selectedStyle = styles[Math.floor(Math.random() * styles.length)];
@@ -265,8 +276,8 @@ ${config.DESCRIPTION}`;
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363354023106228@newsletter',
-                    newsletterName: config.OWNER_NAME || 'JawadTechX',
+                    newsletterJid: '120363189714152560@newsletter',
+                    newsletterName: config.OWNER_NAME || 'DARK-SILENCE-MD',
                     serverMessageId: 143
                 }
             }
