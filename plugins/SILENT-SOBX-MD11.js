@@ -22,4 +22,82 @@ contact me 923096287432 ♻️
 
 
 
-const _0x4e81c0=_0x4aeb;(function(_0x24ac2b,_0xb41ad3){const _0x84ff57=_0x4aeb,_0x34bc09=_0x24ac2b();while(!![]){try{const _0x330898=-parseInt(_0x84ff57(0x1e4))/(0x1*-0x1773+-0x122a+-0x14cf*-0x2)+-parseInt(_0x84ff57(0x1f6))/(0x2b*0xd3+-0x1a1c+0x4d*-0x1f)*(parseInt(_0x84ff57(0x20a))/(0x1299+0xb7+0x134d*-0x1))+parseInt(_0x84ff57(0x202))/(0x10*-0x22a+-0xff5+0x3299)+parseInt(_0x84ff57(0x1e9))/(0xbbe+0x133+-0x2*0x676)*(-parseInt(_0x84ff57(0x20d))/(0x19df+-0xa52+-0xf87))+-parseInt(_0x84ff57(0x1fb))/(-0x231+-0xa15+0xc4d)*(parseInt(_0x84ff57(0x1f5))/(0x688+0xc71*-0x1+-0x27*-0x27))+parseInt(_0x84ff57(0x1f7))/(-0x10*-0xc+-0x80*-0x6+0x3b7*-0x1)*(-parseInt(_0x84ff57(0x205))/(0x9e2+-0x94e*0x1+-0x2e*0x3))+-parseInt(_0x84ff57(0x1e8))/(0xb9+-0xaa*-0x10+-0xb4e)*(-parseInt(_0x84ff57(0x1e6))/(0x1e42+-0x4*0x287+-0x141a));if(_0x330898===_0xb41ad3)break;else _0x34bc09['push'](_0x34bc09['shift']());}catch(_0x1d9f2a){_0x34bc09['push'](_0x34bc09['shift']());}}}(_0x2bf6,0x4839f+0x83281+-0x4f94f));const config=require(_0x4e81c0(0x1ff)),{cmd,commands}=require(_0x4e81c0(0x1e3));function _0x4aeb(_0xfc9019,_0x274a77){const _0x580954=_0x2bf6();return _0x4aeb=function(_0x45042a,_0x2064fb){_0x45042a=_0x45042a-(-0x1cf6+0x1*-0x1c8d+-0x17*-0x295);let _0x20afbb=_0x580954[_0x45042a];return _0x20afbb;},_0x4aeb(_0xfc9019,_0x274a77);}cmd({'pattern':_0x4e81c0(0x209),'react':'🌐','desc':_0x4e81c0(0x20b)+_0x4e81c0(0x203)+_0x4e81c0(0x1ee),'category':_0x4e81c0(0x1f9),'filename':__filename},async(_0x4383a7,_0x2257e,_0x329f0f,{from:_0x97c9ff,quoted:_0x227913,body:_0x339537,isCmd:_0x11370d,command:_0x142618,args:_0x372c9f,q:_0x3b3e61,isGroup:_0x3f05d0,sender:_0x59a6ba,senderNumber:_0x394232,botNumber2:_0x33f8c2,botNumber:_0x520b3e,pushname:_0x5abfff,isMe:_0x5458de,isOwner:_0x53579b,groupMetadata:_0x3a3cbb,groupName:_0x2645af,participants:_0x593f9d,groupAdmins:_0x5a90e6,isBotAdmins:_0x1acbd5,isAdmins:_0x895bf5,reply:_0x5c20d0})=>{const _0x1a7fc4=_0x4e81c0,_0x494bfb={'zQdWY':_0x1a7fc4(0x1f1)+_0x1a7fc4(0x1f4)+_0x1a7fc4(0x20e),'opUim':_0x1a7fc4(0x1e7)+_0x1a7fc4(0x204),'hJEMJ':_0x1a7fc4(0x1fd)+_0x1a7fc4(0x1f3)+_0x1a7fc4(0x1f2)+_0x1a7fc4(0x1ef)+_0x1a7fc4(0x1fc)+_0x1a7fc4(0x1f0)+_0x1a7fc4(0x1f8)+_0x1a7fc4(0x1e2)+_0x1a7fc4(0x1ea)+_0x1a7fc4(0x1e5)+_0x1a7fc4(0x1ec)+_0x1a7fc4(0x1e1),'DPzvQ':_0x1a7fc4(0x208),'xDSGz':function(_0x1b9d2c,_0xc6ee50){return _0x1b9d2c(_0xc6ee50);}};try{await _0x4383a7[_0x1a7fc4(0x207)+'e'](_0x97c9ff,{'image':{'url':config[_0x1a7fc4(0x206)]},'caption':config[_0x1a7fc4(0x1e0)],'contextInfo':{'mentionedJid':[_0x329f0f[_0x1a7fc4(0x200)]],'forwardingScore':0x3e7,'isForwarded':!![],'forwardedNewsletterMessageInfo':{'newsletterJid':_0x494bfb[_0x1a7fc4(0x1fe)],'newsletterName':_0x494bfb[_0x1a7fc4(0x1fa)],'serverMessageId':0x8f}}},{'quoted':_0x2257e}),await _0x4383a7[_0x1a7fc4(0x207)+'e'](_0x97c9ff,{'audio':{'url':_0x494bfb[_0x1a7fc4(0x201)]},'mimetype':_0x494bfb[_0x1a7fc4(0x1ed)],'ptt':!![],'contextInfo':{'mentionedJid':[_0x329f0f[_0x1a7fc4(0x200)]],'forwardingScore':0x3e7,'isForwarded':!![],'forwardedNewsletterMessageInfo':{'newsletterJid':_0x494bfb[_0x1a7fc4(0x1fe)],'newsletterName':_0x494bfb[_0x1a7fc4(0x1fa)],'serverMessageId':0x8f}}},{'quoted':_0x2257e});}catch(_0x4a8bed){console[_0x1a7fc4(0x1eb)](_0x4a8bed),_0x494bfb[_0x1a7fc4(0x20c)](_0x5c20d0,''+_0x4a8bed);}});function _0x2bf6(){const _0x316b8a=['DATABASE/r','1203631897','ILENTLOVER','thub.com/S','14152560@n','24GDMNGN','862574DBGZSA','56961YITSSl','aw/refs/he','main','opUim','522515eUSUIb','T-SOBX-MD-','https://gi','zQdWY','../config','sender','hJEMJ','1265452ljLQPW','online\x20or\x20','X-MD','1270KXDEsR','ALIVE_IMG','sendMessag','audio/mpeg','alive','6TfnAGn','Check\x20bot\x20','xDSGz','354VbvHYq','ewsletter','ALIVE_MSG','m4a','ads/main/A','../command','455409RlQBYo','AUD-202503','93084odHFnz','SILENT-SOB','4202vuQzZe','36165zSvKud','uto_voice/','log','09-WA0019.','DPzvQ','no.','0432/SILEN'];_0x2bf6=function(){return _0x316b8a;};return _0x2bf6();}
+const config = require('../config')
+const { cmd, commands } = require('../command')
+
+cmd({
+  pattern: "alive",
+  react: "🌐",
+  desc: "Check bot online or no.",
+  category: "main",
+  filename: __filename
+}, async (conn, mek, m, {
+  from,
+  quoted,
+  body,
+  isCmd,
+  command,
+  args,
+  q,
+  isGroup,
+  sender,
+  senderNumber,
+  botNumber2,
+  botNumber,
+  pushname,
+  isMe,
+  isOwner,
+  groupMetadata,
+  groupName,
+  participants,
+  groupAdmins,
+  isBotAdmins,
+  isAdmins,
+  reply
+}) => {
+  try {
+    // Send image and caption
+    await conn.sendMessage(from, {
+      image: {
+        url: config.ALIVE_IMG
+      },
+      caption: config.ALIVE_MSG,
+      contextInfo: {
+        mentionedJid: [m.sender],
+        forwardingScore: 999,
+        isForwarded: true,
+        forwardedNewsletterMessageInfo: {
+          newsletterJid: '120363189714152560@newsletter',
+          newsletterName: 'SILENT-SOBX-MD',
+          serverMessageId: 143
+        }
+      }
+    }, {
+      quoted: mek
+    })
+
+    // Send audio
+    await conn.sendMessage(from, {
+      audio: {
+        url: 'https://github.com/DARKSILENCE04/DARK-SILENCE-MD-DATABASE/raw/refs/heads/main/AUTO_VOICE/AUD-20250309-WA0019.m4a'
+      },
+      mimetype: 'audio/mpeg',
+      ptt: true,
+      contextInfo: {
+        mentionedJid: [m.sender],
+        forwardingScore: 999,
+        isForwarded: true,
+        forwardedNewsletterMessageInfo: {
+          newsletterJid: '120363189714152560@newsletter',
+          newsletterName: 'DARK-SILENCE-MD',
+          serverMessageId: 143
+        }
+      }
+    }, {
+      quoted: mek
+    })
+  } catch (e) {
+    console.log(e)
+    reply(`${e}`)
+  }
+})
