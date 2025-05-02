@@ -269,8 +269,8 @@ ${config.CAPTION}`;
         const styles = [style1, style2, style3, style4, style5, style6, style7, style8, style9, style10];
         const selectedStyle = styles[Math.floor(Math.random() * styles.length)];
 
-        await conn.sendMessage(from,{image:{url:config.ALIVE_IMG},text: selectedStyle,
-            contextInfo: {
+        await conn.sendMessage(from,{image:{url:config.ALIVE_IMG},caption:selectedStyle, 
+                             contextInfo: {
                 mentionedJid: [m.sender],
                 forwardingScore: 999,
                 isForwarded: true,
