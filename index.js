@@ -148,7 +148,7 @@ console.log("SESSION DOWNLOADED SUCCESSFULLY ✅")
 
 ╭─ 「 *[ •  B O T  - R E P O ‎ • ]* 」
 ┊  ╭───────────❂
-┊📄┊ *https://github.com/DARKSILENCE4/DARK-SILENCE-MD*
+┊📄┊ *https://github.com/DARKSILENCE04/DARK-SILENCE-MD*
 ┊  ╰──────────❂
 ╰─────────────❂
 *DARK-SILENCE-MD ACTIVE NOW!♻️*\n\n*YOUR-PREFIX: [${prefix}]*
