@@ -18,264 +18,92 @@ contact me 923096287432 ♻️
 */
 
 
-
-const config = require('../config')
-const {cmd , commands} = require('../command')
-const os = require("os")
-const {runtime} = require('../lib/functions')
-const axios = require('axios')
-const {sleep} = require('../lib/functions')
-const fetch = require('node-fetch');
+const { cmd } = require("../command");
+const axios = require('axios');
+const fs = require('fs');
+const path = require("path");
+const AdmZip = require("adm-zip");
+const { setCommitHash, getCommitHash } = require('../silentlover/SILENT-SOBX-MD');
 
 cmd({
-    pattern: "restart",
-    alias: ["rebot","reboot"], 
-    react: "🐬",
-    desc: "restart the bot",
-    category: "owner",
+    pattern: "update",
+    alias: ["upgrade", "sync"],
+    react: '🆕',
+    desc: "Update the bot to the latest version.",
+    category: "misc",
     filename: __filename
-},
-async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
-try{
-if (!isOwner) return reply("*_You're not bot owner 🪄._*");
-const {exec} = require("child_process")
-reply("*_DARK-SILENCE-MD RESTARTING...🚀_*")
-await sleep(1500)
-exec("pm2 restart all")
-reply("*_DARK-SILENCE-MD SUCCESSFULLY RESTART...✨_*")
-}catch(e){
-console.log(e)
-reply(`${e}`)
+}, async (client, message, args, { reply, isOwner }) => {
+    if (!isOwner) return reply("This command is only for the bot owner.");
+
+    try {
+        await reply("*_🔍 CHECKING UPDATES FOR DARK-SILENCE-MD..🚀_*");
+
+        // Fetch the latest commit hash from GitHub
+        const { data: commitData } = await axios.get("https://api.github.com/repos/DARKSILENCE04/DARK-SILENCE-MD/commits/main");
+        const latestCommitHash = commitData.sha;
+
+        // Get the stored commit hash from the database
+        const currentHash = await getCommitHash();
+
+        if (latestCommitHash === currentHash) {
+            return reply("*_✅ DARK-SILENCE-MD IS ALREADY UP-TO-DATE...🚀_*");
+        }
+
+        await reply("*_🌐 UPDATING DARK-SILENCE-MD PLEASE WAIT...🚀_*");
+
+        // Download the latest code
+        const zipPath = path.join(__dirname, "latest.zip");
+        const { data: zipData } = await axios.get("https://github.com/DARKSILENCE04/DARK-SILENCE-MD/archive/main.zip", { responseType: "arraybuffer" });
+        fs.writeFileSync(zipPath, zipData);
+
+        // Extract ZIP file
+        await reply("*_📦 EXTRACTING THE LATEST FILES...🚀_*");
+        const extractPath = path.join(__dirname, 'latest');
+        const zip = new AdmZip(zipPath);
+        zip.extractAllTo(extractPath, true);
+
+        // Copy updated files, preserving config.js and app.json
+        await reply("*_🔄 REPLACING FILES...🚀_*");
+        const sourcePath = path.join(extractPath, "DARK-SILENCE-MD-main");
+        const destinationPath = path.join(__dirname, '..');
+        copyFolderSync(sourcePath, destinationPath);
+
+        // Save the latest commit hash to the database
+        await setCommitHash(latestCommitHash);
+
+        // Cleanup
+        fs.unlinkSync(zipPath);
+        fs.rmSync(extractPath, { recursive: true, force: true });
+
+        await reply("*_✅ UPDATE COMPLETE! RESTARTING YOUR BOT...🚀_*");
+        process.exit(0);
+    } catch (error) {
+        console.error("Update error:", error);
+        return reply("❌ Update failed. Please try manually.");
+    }
+});
+
+// Helper function to copy directories while preserving config.js and app.json
+function copyFolderSync(source, target) {
+    if (!fs.existsSync(target)) {
+        fs.mkdirSync(target, { recursive: true });
+    }
+
+    const items = fs.readdirSync(source);
+    for (const item of items) {
+        const srcPath = path.join(source, item);
+        const destPath = path.join(target, item);
+
+        // Skip config.js and app.json
+        if (item === "config.js" || item === "app.json") {
+            console.log(`Skipping ${item} to preserve custom settings.`);
+            continue;
+        }
+
+        if (fs.lstatSync(srcPath).isDirectory()) {
+            copyFolderSync(srcPath, destPath);
+        } else {
+            fs.copyFileSync(srcPath, destPath);
+        }
+    }
 }
-})
-
-cmd({
-
-    pattern: "settings",
-
-    react: "☣️",
-
-    alias: ["setting","env"],
-
-    desc: "Get bot\'s settings list.",
-
-    category: "main",
-
-    use: '.setting',
-
-    filename: __filename
-
-},
-
-async(conn, mek, m,{from, l, quoted, body, isCmd, umarmd, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
-
-try{
-if (!isOwner) return reply("You're not bot owner 🪄.");
-let madeSetting =`
-*[ •  DARK-SILENCE-MD - SETTINGS‎ • ]*
-*╭━━━〔 SETTING-LIST 📃 〕━━━┈⊷*
-*┃★╭──────────────*
-*┃◈┃•* *♾️ AUTO_READ_STATUS:* ➠ ${config.AUTO_READ_STATUS}
-*┃◈┃•* *♾️ MODE:* ➠ ${config.MODE} 
-*┃◈┃•* *♾️ AUTO_VOICE:* ➠ ${config.AUTO_VOICE} 
-*┃◈┃•* *♾️ AUTO_STICKER:* ➠ ${config.AUTO_STICKER} 
-*┃◈┃•* *♾️ AUTO_REPLY:* ➠ ${config.AUTO_REPLY} 
-*┃◈┃•* *♾️ ALIVE_IMG:* ➠ ${config.ALIVE_IMG} 
-*┃◈┃•* *♾️ ALIVE_MSG:* ➠ ${config.ALIVE_MSG} 
-*┃◈┃•* *♾️ ANTI_LINK:* ➠ ${config.ANTI_LINK} 
-*┃◈┃•* *♾️ ANTI_BAD:* ➠ ${config.ANTI_BAD} 
-*┃◈┃•* *♾️ PREFIX:* ➠ [${config.PREFIX}]
-*┃◈┃•* *♾️ FAKE_RECORDING:* ➠ ${config.FAKE_RECORDING}
-*┃◈┃•* *♾️ FAKE_TYPING:* ➠ ${config.FAKE_TYPING}
-*┃◈┃•* *♾️ AUTO_REACT:* ➠ ${config.AUTO_REACT} 
-*┃◈┃•* *♾️ HEART_REACT:* ➠ ${config.HEART_REACT} 
-*┃◈┃•* *♾️ AUTO_REPLY_STATUS:* ➠ ${config.AUTO_REPLY_STATUS} 
-*┃◈┃•* *♾️ BOT_NAME:* ➠ ${config.BOT_NAME}
-*┃◈┃•* *♾️ READ_MESSAGE:* ➠ ${config.READ_MESSAGE}
-*┃◈┃•* *♾️ READ_CMD:* ➠ ${config.READ_CMD}
-*┃◈┃•* *♾️ CAPTION:* ➠ ${config.CAPTION}
-*┃◈┃•* *♾️ ALWAYS_ONLINE:* ➠ ${config.ALWAYS_ONLINE}
-*┃◈┃•* *♾️ CURRENT_STATUS:* ➠ ${config.CURRENT_STATUS}
-*┃◈┃•* *♾️ STATUS_REPLY:* ➠ ${config.STATUS_REPLY}
-*┃◈┃•* *♾️ STATUS_REACT:* ➠ ${config.STATUS_REACT}
-*┃◈┃•* *♾️ ANTI_DEL_PATH:* ➠ ${config.ANTI_DEL_PATH}
-*┃★╰──────────────*
-*╰━━━━━━━━━━━━━━━┈⊷*
-
-*•────────────•⟢*
-> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ sɪʟᴇɴᴛʟᴏᴠᴇʀ⁴³²
-*•────────────•⟢*
-`
-
-
-await conn.sendMessage(from,{image:{url:config.ALIVE_IMG},caption:madeSetting, 
-                             contextInfo: {
-
-mentionedJid: [m.sender],
-                forwardingScore: 999,
-                isForwarded: true,
-                forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363189714152560@newsletter',
-                    newsletterName: 'sιℓεηт-sσвx-м∂',
-                    serverMessageId: 143
-                }
-            }
-        }, { quoted: mek });
-    } catch (e) {
-        console.error(e);
-        reply(`An error occurred: ${e.message}`);
-    }
-});
-
-cmd({
-  pattern: 'system',
-  alias: ["status", "runtime", "uptime","info"],
-  react: '🚀',
-  desc: "Check bot's version, system stats, and update info.",
-  category: 'info',
-  filename: __filename
-}, async (conn, mek, m, {
-  from, sender, pushname, reply
-}) => {
-  try {
-    // Read local version data
-    const localVersionPath = path.join(__dirname, '../my_data/version.json');
-    let localVersion = 'Unknown';
-    let changelog = 'No changelog available.';
-    if (fs.existsSync(localVersionPath)) {
-      const localData = JSON.parse(fs.readFileSync(localVersionPath));
-      localVersion = localData.version;
-      changelog = localData.changelog;
-    }
-
-    // Fetch latest version data from GitHub
-    const rawVersionUrl = 'https://raw.githubusercontent.com/DARKSILENCE04/DARK-SILENCE-MD/main/my_data/version.json';
-    let latestVersion = 'Unknown';
-    let latestChangelog = 'No changelog available.';
-    try {
-      const { data } = await axios.get(rawVersionUrl);
-      latestVersion = data.version;
-      latestChangelog = data.changelog;
-    } catch (error) {
-      console.error('Failed to fetch latest version:', error);
-    }
-
-    // Count total plugins
-    const pluginPath = path.join(__dirname, '../plugins');
-    const pluginCount = fs.readdirSync(pluginPath).filter(file => file.endsWith('.js')).length;
-
-    // Count total registered commands
-    const totalCommands = commands.length;
-
-    // System info
-    const uptime = runtime(process.uptime());
-    const ramUsage = (process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2);
-    const totalRam = (os.totalmem() / 1024 / 1024).toFixed(2);
-    const hostName = os.hostname();
-    const lastUpdate = fs.statSync(localVersionPath).mtime.toLocaleString();
-
-    // GitHub stats
-    const githubRepo = 'https://github.com/DARKSILENCE04/DARK-SILENCE-MD';
-
-    // Check update status
-    let updateMessage = `✅ YOUR BOT DARK-SILENCE-MD IS UP-TO-DATE! 🚀❤️`;
-    if (localVersion !== latestVersion) {
-      updateMessage = `🚀 YOUR BOT DARK-SILENCE-MD IS OUTDATED!
-🔹 *CURRENT VERSION:* ${localVersion}
-🔹 *LATEST VERSION:* ${latestVersion}
-
-USE *.UPDATE* TO UPDATE YOUR BOT.`;
-    }
-
-    const statusMessage = `🌟 *GOOD ${new Date().getHours() < 12 ? 'MORNING' : 'NIGHT'}, ${pushname}!* 🌟\n\n` +
-      `📌 *BOT NAME:* DARK-SILENCE-MD\n🔖 *CURRENT VERSION 🚀:* ${localVersion}\n📢 *LATEST VERSION:* ${latestVersion}\n📂 *TOTAL PLUGINS:* ${pluginCount}\n🔢 *TOTAL COMMANDS🚀:* ${totalCommands}\n\n` +
-      `💾 *SYSTEM INFO:*\n⏳ *UPTIME:* ${uptime}\n📟 *RAM USAGE:* ${ramUsage}MB / ${totalRam}MB\n⚙️ *HOST NAME:* ${hostName}\n📅 *LAST UPDATE:* ${lastUpdate}\n\n*_♻️PLATFORM:➠_* ${process.env.DYNO ? "Heroku" : "Localhost"}` +
-      `📝 *CHANGELOG:*\n${latestChangelog}\n\n` +
-      `⭐ *GITHUB REPO:* ${githubRepo}\n👤 *OWNER:* [SILENTLOVER432](https://github.com/DARKSILENCE04)\n\n${updateMessage}\n\n🚀 *HEY! DON'T FORGET TO FORK & STAR 🌟 THE REPO!*`;
-
-    // Send the status message with an image
-    await conn.sendMessage(from, {
-      image: { url: 'https://files.catbox.moe/jm5q8q' },
-      caption: statusMessage,
-      contextInfo: {
-        mentionedJid: [m.sender],
-        forwardingScore: 999,
-        isForwarded: true,
-        forwardedNewsletterMessageInfo: {
-          newsletterJid: '120363189714152560@newsletter',
-          newsletterName: 'DARK-SILENCE-MD',
-          serverMessageId: 143
-        }
-      }
-    }, { quoted: mek });
-  } catch (error) {
-    console.error('Error fetching version info:', error);
-    reply('❌ An error occurred while checking the bot version.');
-  }
-});
-
-cmd({
-    pattern: "repo",
-    alias: ["sc", "script", "repository"],
-    desc: "Fetch information about a GitHub repository.",
-    react: "📂",
-    category: "info",
-    filename: __filename,
-},
-async (conn, mek, m, { from, reply }) => {
-    const githubRepoURL = 'https://github.com/DARKSILENCE04/DARK-SILENCE-MD';
-
-    try {
-        // Extract username and repo name from the URL
-        const [, username, repoName] = githubRepoURL.match(/github\.com\/([^/]+)\/([^/]+)/);
-
-        // Fetch repository details using GitHub API
-        const response = await fetch(`https://api.github.com/repos/${username}/${repoName}`);
-        
-        if (!response.ok) {
-            throw new Error(`GitHub API request failed with status ${response.status}`);
-        }
-
-        const repoData = await response.json();
-
-        // Format the repository information
-        const formattedInfo = `*_DARK-SILENCE-MD IS THE LATAST VERSION OF SILENT-SOBX-MD THIS BOT CREATED TO USE BAILEYS DARK-SILENCE-MD WORLD BEST WHATSAPP BOT POWERD BY SILENTLOVER432💙🌍_*\n\n*[ BOT • NAME:📦 ]*\n> ${repoData.name}\n\n*[ OWNER • NAME:🪩 ]*\n> ${repoData.owner.login}\n\n*[ STARS:🌟 ]*\n> ${repoData.stargazers_count}\n\n*[ FORKS:🚀 ]*\n> ${repoData.forks_count}\n\n*[ GITHUB • LINK:💫 ]*\n> ${repoData.html_url}\n\n*[ DESCRIPTION:🤖 ]*\n> ${repoData.description || '*THE WORLD 🌍 BEST WHATSAPP BOT CREATED BY SILENTLOVER432 ♥️*'}\n\n*DON'T FORGET TO STAR 🌟 AND FORK REPOSITORY 🚀*\n\n> *© POWERED BY SILENTLOVER432 ♥️*`;
-
-        // Send an image with the formatted info as a caption and context info
-        await conn.sendMessage(from, {
-            image: { url: `https://files.catbox.moe/jm5q8q` },
-            caption: formattedInfo,
-            contextInfo: { 
-                mentionedJid: [m.sender],
-                forwardingScore: 999,
-                isForwarded: true,
-                forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363189714152560@newsletter',
-                    newsletterName: 'DARK-SILENCE-MD',
-                    serverMessageId: 143
-                }
-            }
-        }, { quoted: mek });
-
-        // Send the audio file with context info
-        await conn.sendMessage(from, {
-            audio: { url: 'https://github.com/DARKSILENCE04/DARK-SILENCE-MD-DATABASE/raw/refs/heads/main/AUTO_VOICE/AUD-20250309-WA0019.m4a' },
-            mimetype: 'audio/mp4',
-            ptt: true,
-            contextInfo: { 
-                mentionedJid: [m.sender],
-                forwardingScore: 999,
-                isForwarded: true,
-                forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363189714152560@newsletter',
-                    newsletterName: 'DARK-SILENCE-MD',
-                    serverMessageId: 143
-                }
-            }
-        }, { quoted: mek });
-
-    } catch (error) {
-        console.error("Error in repo command:", error);
-        reply("Sorry, something went wrong while fetching the repository information. Please try again later.");
-    }
-});
