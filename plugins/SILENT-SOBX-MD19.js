@@ -45,63 +45,140 @@ const path = require("path");
 const AdmZip = require("adm-zip");
 const { setCommitHash, getCommitHash } = require('../silentlover/SILENT-SOBX-MD');
 
+const { cmd } = require('../command');
+const { runtime } = require('../lib/functions');
+const config = require('../config');
+
 cmd({
-    pattern: "update",
-    alias: ["upgrade", "sync"],
-    react: '🆕',
-    desc: "Update the bot to the latest version.",
-    category: "misc",
+    pattern: "uptime",
+    alias: ["runtime", "up"],
+    desc: "Show bot uptime with stylish formats",
+    category: "main",
+    react: "⏱️",
     filename: __filename
-}, async (client, message, args, { reply, isOwner }) => {
-    if (!isOwner) return reply("This command is only for the bot owner.");
-
+},
+async (conn, mek, m, { from, reply }) => {
     try {
-        await reply("*_🔍 CHECKING UPDATES FOR DARK-SILENCE-MD..🚀_*");
+        const uptime = runtime(process.uptime());
+        const startTime = new Date(Date.now() - process.uptime() * 1000);
+        
+        // Style 1: Classic Box
+        const style1 = `╭───『 UPTIME 』───⳹
+│
+│ ⏱️ ${uptime}
+│
+│ 🚀 Started: ${startTime.toLocaleString()}
+│
+╰────────────────⳹
+${config.DESCRIPTION}`;
 
-        // Fetch the latest commit hash from GitHub
-        const { data: commitData } = await axios.get("https://api.github.com/repos/DARKSILENCE04/DARK-SILENCE-MD/commits/main");
-        const latestCommitHash = commitData.sha;
+        // Style 2: Minimalist
+        const style2 = `•——[ UPTIME ]——•
+  │
+  ├─ ⏳ ${uptime}
+  ├─ 🕒 Since: ${startTime.toLocaleTimeString()}
+  │
+  •——[ ${config.BOT_NAME} ]——•`;
 
-        // Get the stored commit hash from the database
-        const currentHash = await getCommitHash();
+        // Style 3: Fancy Borders
+        const style3 = `▄▀▄▀▄ BOT UPTIME ▄▀▄▀▄
 
-        if (latestCommitHash === currentHash) {
-            return reply("*_✅ DARK-SILENCE-MD IS ALREADY UP-TO-DATE...🚀_*");
-        }
+  ♢ Running: ${uptime}
+  ♢ Since: ${startTime.toLocaleDateString()}
+  
+  ${config.DESCRIPTION}`;
 
-        await reply("*_🌐 UPDATING DARK-SILENCE-MD PLEASE WAIT...🚀_*");
+        // Style 4: Code Style
+        const style4 = `┌──────────────────────┐
+│  ⚡ UPTIME STATUS ⚡  │
+├──────────────────────┤
+│ • Time: ${uptime}
+│ • Started: ${startTime.toLocaleString()}
+│ • Version: 4.0.0
+└──────────────────────┘`;
 
-        // Download the latest code
-        const zipPath = path.join(__dirname, "latest.zip");
-        const { data: zipData } = await axios.get("https://github.com/DARKSILENCE04/DARK-SILENCE-MD/archive/main.zip", { responseType: "arraybuffer" });
-        fs.writeFileSync(zipPath, zipData);
+        // Style 5: Modern Blocks
+        const style5 = `▰▰▰▰▰ UPTIME ▰▰▰▰▰
 
-        // Extract ZIP file
-        await reply("*_📦 EXTRACTING THE LATEST FILES...🚀_*");
-        const extractPath = path.join(__dirname, 'latest');
-        const zip = new AdmZip(zipPath);
-        zip.extractAllTo(extractPath, true);
+  ⏳ ${uptime}
+  🕰️ ${startTime.toLocaleString()}
+  
+  ${config.DESCRIPTION}`;
 
-        // Copy updated files, preserving config.js and app.json
-        await reply("*_🔄 REPLACING FILES...🚀_*");
-        const sourcePath = path.join(extractPath, "DARK-SILENCE-MD-main");
-        const destinationPath = path.join(__dirname, '..');
-        copyFolderSync(sourcePath, destinationPath);
+        // Style 6: Retro Terminal
+        const style6 = `╔══════════════════════╗
+║   ${config.BOT_NAME} UPTIME    ║
+╠══════════════════════╣
+║ > RUNTIME: ${uptime}
+║ > SINCE: ${startTime.toLocaleString()}
+╚══════════════════════╝`;
 
-        // Save the latest commit hash to the database
-        await setCommitHash(latestCommitHash);
+        // Style 7: Elegant
+        const style7 = `┌───────────────┐
+│  ⏱️  UPTIME  │
+└───────────────┘
+│
+│ ${uptime}
+│
+│ Since ${startTime.toLocaleDateString()}
+│
+┌───────────────┐
+│  ${config.BOT_NAME}  │
+└───────────────┘`;
 
-        // Cleanup
-        fs.unlinkSync(zipPath);
-        fs.rmSync(extractPath, { recursive: true, force: true });
+        // Style 8: Social Media Style
+        const style8 = `⏱️ *Uptime Report* ⏱️
 
-        await reply("*_✅ UPDATE COMPLETE! RESTARTING YOUR BOT...🚀_*");
-        process.exit(0);
-    } catch (error) {
-        console.error("Update error:", error);
-        return reply("❌ Update failed. Please try manually.");
+🟢 Online for: ${uptime}
+📅 Since: ${startTime.toLocaleString()}
+
+${config.DESCRIPTION}`;
+
+        // Style 9: Fancy List
+        const style9 = `╔♫═⏱️═♫══════════╗
+   ${config.BOT_NAME} UPTIME
+╚♫═⏱️═♫══════════╝
+
+•・゜゜・* ✧  *・゜゜・•
+ ✧ ${uptime}
+ ✧ Since ${startTime.toLocaleDateString()}
+•・゜゜・* ✧  *・゜゜・•`;
+
+        // Style 10: Professional
+        const style10 = `┏━━━━━━━━━━━━━━━━━━┓
+┃  UPTIME ANALYSIS  ┃
+┗━━━━━━━━━━━━━━━━━━┛
+
+◈ Duration: ${uptime}
+◈ Start Time: ${startTime.toLocaleString()}
+◈ Stability: 100%
+◈ Version:  4.0.0
+
+${config.DESCRIPTION}`;
+
+        const styles = [style1, style2, style3, style4, style5, style6, style7, style8, style9, style10];
+        const selectedStyle = styles[Math.floor(Math.random() * styles.length)];
+
+        await conn.sendMessage(from, { 
+            text: selectedStyle,
+            contextInfo: {
+                mentionedJid: [m.sender],
+                forwardingScore: 999,
+                isForwarded: true,
+                forwardedNewsletterMessageInfo: {
+                    newsletterJid: '120363354023106228@newsletter',
+                    newsletterName: config.OWNER_NAME || 'JawadTechX',
+                    serverMessageId: 143
+                }
+            }
+        }, { quoted: mek });
+
+    } catch (e) {
+        console.error("Uptime Error:", e);
+        reply(`❌ Error: ${e.message}`);
     }
 });
+
 
 // Helper function to copy directories while preserving config.js and app.json
 function copyFolderSync(source, target) {
