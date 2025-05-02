@@ -189,7 +189,7 @@ ${config.CAPTION}`;
   ♢ Since: ${startTime.toLocaleDateString()}
   ♢ PLATFORM: ${process.env.DYNO ? "Heroku" : "Localhost"}
   
-  ${config.DESCRIPTION}`;
+${config.CAPTION}`;
 
         // Style 4: Code Style
         const style4 = `┌──────────────────────┐
