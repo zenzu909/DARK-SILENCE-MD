@@ -149,6 +149,7 @@ mentionedJid: [m.sender],
 });
 
 cmd({
+cmd({
   pattern: 'system',
   alias: ["status", "runtime", "uptime","info"],
   react: '🚀',
@@ -170,7 +171,7 @@ cmd({
     }
 
     // Fetch latest version data from GitHub
-    const rawVersionUrl = 'https://raw.githubusercontent.com/DARKSILENCE04/DARK-SILENCE-MD/main/my_data/version.json';
+    const rawVersionUrl = 'https://raw.githubusercontent.com/SILENTLOVER0432/SILENT-SOBX-MD/main/my_data/version.json';
     let latestVersion = 'Unknown';
     let latestChangelog = 'No changelog available.';
     try {
@@ -196,12 +197,12 @@ cmd({
     const lastUpdate = fs.statSync(localVersionPath).mtime.toLocaleString();
 
     // GitHub stats
-    const githubRepo = 'https://github.com/DARKSILENCE04/DARK-SILENCE-MD';
+    const githubRepo = 'https://github.com/SILENTLOVER0432/SILENT-SOBX-MD';
 
     // Check update status
-    let updateMessage = `✅ YOUR BOT DARK-SILENCE-MD IS UP-TO-DATE! 🚀❤️`;
+    let updateMessage = `✅ YOUR BOT SILENT-SOBX-MD IS UP-TO-DATE! 🚀❤️`;
     if (localVersion !== latestVersion) {
-      updateMessage = `🚀 YOUR BOT DARK-SILENCE-MD IS OUTDATED!
+      updateMessage = `🚀 YOUR BOT SILENT-SOBX-MD IS OUTDATED!
 🔹 *CURRENT VERSION:* ${localVersion}
 🔹 *LATEST VERSION:* ${latestVersion}
 
@@ -209,14 +210,14 @@ USE *.UPDATE* TO UPDATE YOUR BOT.`;
     }
 
     const statusMessage = `🌟 *GOOD ${new Date().getHours() < 12 ? 'MORNING' : 'NIGHT'}, ${pushname}!* 🌟\n\n` +
-      `📌 *BOT NAME:* DARK-SILENCE-MD\n🔖 *CURRENT VERSION 🚀:* ${localVersion}\n📢 *LATEST VERSION:* ${latestVersion}\n📂 *TOTAL PLUGINS:* ${pluginCount}\n🔢 *TOTAL COMMANDS🚀:* ${totalCommands}\n\n` +
+      `📌 *BOT NAME:* SILENT-SOBX-MD\n🔖 *CURRENT VERSION 🚀:* ${localVersion}\n📢 *LATEST VERSION:* ${latestVersion}\n📂 *TOTAL PLUGINS:* ${pluginCount}\n🔢 *TOTAL COMMANDS🚀:* ${totalCommands}\n\n` +
       `💾 *SYSTEM INFO:*\n⏳ *UPTIME:* ${uptime}\n📟 *RAM USAGE:* ${ramUsage}MB / ${totalRam}MB\n⚙️ *HOST NAME:* ${hostName}\n📅 *LAST UPDATE:* ${lastUpdate}\n\n*_♻️PLATFORM:➠_* ${process.env.DYNO ? "Heroku" : "Localhost"}` +
       `📝 *CHANGELOG:*\n${latestChangelog}\n\n` +
-      `⭐ *GITHUB REPO:* ${githubRepo}\n👤 *OWNER:* [SILENTLOVER432](https://github.com/DARKSILENCE04)\n\n${updateMessage}\n\n🚀 *HEY! DON'T FORGET TO FORK & STAR 🌟 THE REPO!*`;
+      `⭐ *GITHUB REPO:* ${githubRepo}\n👤 *OWNER:* [SILENTLOVER432](https://github.com/SILENTLOVER0432)\n\n${updateMessage}\n\n🚀 *HEY! DON'T FORGET TO FORK & STAR 🌟 THE REPO!*`;
 
     // Send the status message with an image
     await conn.sendMessage(from, {
-      image: { url: 'https://files.catbox.moe/jm5q8q' },
+      image: { url: 'https://telegra.ph/file/2a06381b260c3f096a612.jpg' },
       caption: statusMessage,
       contextInfo: {
         mentionedJid: [m.sender],
@@ -224,7 +225,7 @@ USE *.UPDATE* TO UPDATE YOUR BOT.`;
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
           newsletterJid: '120363189714152560@newsletter',
-          newsletterName: 'DARK-SILENCE-MD',
+          newsletterName: 'SILENT-SOBX-MD',
           serverMessageId: 143
         }
       }
