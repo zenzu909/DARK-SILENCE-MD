@@ -45,9 +45,6 @@ const path = require("path");
 const AdmZip = require("adm-zip");
 const { setCommitHash, getCommitHash } = require('../silentlover/SILENT-SOBX-MD');
 
-const { cmd } = require('../command');
-const { runtime } = require('../lib/functions');
-const config = require('../config');
 
 cmd({
     pattern: "uptime",
