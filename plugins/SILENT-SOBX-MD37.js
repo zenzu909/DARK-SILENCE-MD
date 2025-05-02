@@ -149,7 +149,6 @@ mentionedJid: [m.sender],
 });
 
 cmd({
-cmd({
   pattern: 'system',
   alias: ["status", "runtime", "uptime","info"],
   react: '🚀',
