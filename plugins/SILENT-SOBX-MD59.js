@@ -64,12 +64,12 @@ async (conn, mek, m, {
         ];
 
         // Create menu text
-        let menuText = "╭━━━〔 *AI VOICE MODELS* 〕━━━⊷\n";
+        let menuText = "╭━━━〔 *DARK-SILENCE-MD AI VOICE MODELS* 〕━━━⊷\n";
         voiceModels.forEach(model => {
             menuText += `┃▸ ${model.number}. ${model.name}\n`;
         });
         menuText += "╰━━━⪼\n\n";
-        menuText += `📌 *Reply with the number to select voice model for:*\n"${inputText}"`;
+        menuText += `📌 *Reply with the number to select voice model for:*\n\n"${inputText}"\n\n©POWERD BY SILENTLOVER432💌`;
 
         // Send menu message with image
         const sentMsg = await conn.sendMessage(from, {  
