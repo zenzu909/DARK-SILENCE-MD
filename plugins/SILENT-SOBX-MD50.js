@@ -47,7 +47,7 @@ cmd({
     }
 
     // Fetch latest version data from GitHub
-    const rawVersionUrl = 'https://raw.githubusercontent.com/DARKSILENCE04/DARK-SILENCE-MD/main/data/version.json';
+    const rawVersionUrl = 'https://raw.githubusercontent.com/DARKSILENCE04/DARK-SILENCE-MD/main/my_data/version.json';
     let latestVersion = 'Unknown';
     let latestChangelog = 'No changelog available.';
     try {
