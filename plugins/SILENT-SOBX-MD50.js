@@ -93,7 +93,7 @@ Use *.update* to Update Your bot.`;
 
     // Send the status message with an image
     await conn.sendMessage(from, {
-      image: { url: 'https://files.catbox.moe/jm5q8q' },
+      image: { url: 'https://telegra.ph/file/2a06381b260c3f096a612.jpg' },
       caption: statusMessage,
       contextInfo: {
         mentionedJid: [m.sender],
