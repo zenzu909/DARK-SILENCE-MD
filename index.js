@@ -157,7 +157,7 @@ console.log("SESSION DOWNLOADED SUCCESSFULLY ✅")
 > © ᴘᴏᴡᴇʀᴇᴅ ʙʏ sɪʟᴇɴᴛʟᴏᴠᴇʀ⁴³²
 *•────────────•⟢*
 `;
-conn.sendMessage(conn.user.id, { image: { url: `https://ibb.co/Pz1jrrwT` }, caption: up })
+conn.sendMessage(conn.user.id, { image: { url: `https://telegra.ph/file/2a06381b260c3f096a612.jpg` }, caption: up })
 
 }
 })
