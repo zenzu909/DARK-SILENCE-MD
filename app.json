@@ -1,7 +1,7 @@
 {
   "name": "DARK-SILENCE-MD",
   "description": "JAVASCRIPT WHATSAPP BOT PROJECT POWERD BY SILENTLOVER432 ♥️",
-  "logo": "https://github.com/Awais-star-a11y/TESTING-REPO/raw/refs/heads/main/IMG-20250505-WA0060.jpg",
+  "logo": "https://telegra.ph/file/2a06381b260c3f096a612.jpg",
   "keywords": ["bot"],
   "success_url": "/",
 
@@ -16,7 +16,7 @@
     "ALIVE_IMG": {
       "description": "paste your image url if you don't have you can use this public url.",
       "required": true,
-      "value": "https://github.com/Awais-star-a11y/TESTING-REPO/raw/refs/heads/main/IMG-20250505-WA0060.jpg"
+      "value": "https://files.catbox.moe/ubiq23"
     }, 
     
     "ALIVE_MSG": {
