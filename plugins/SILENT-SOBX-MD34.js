@@ -73,19 +73,27 @@ async (conn, mek, m, { from, quoted, sender, reply }) => {
         await conn.sendMessage(from, {
             text,
             contextInfo: {
-                mentionedJid: [sender],
-                forwardingScore: 999,
+                mentionedJid: ['923096287432@s.whatsapp.net'], // specify mentioned JID(s) if any
+                groupMentions: [],
+                forwardingScore: 1,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '120363189714152560@newsletter',
-                    newsletterName: "sɪʟᴇɴᴛ-sᴏʙx-ᴍᴅ",
-                    serverMessageId: 143
+                    newsletterName: "DARK-SILENCE-MD",
+                    serverMessageId: 999
+                },
+                externalAdReply: {
+                    title: 'DARK-SILENCE-MD',
+                    body: 'DARK-SILENCE-MD',
+                    mediaType: 1,
+                    sourceUrl: "https://github.com/DARKSILENCE04/DARK-SILENCE-MD",
+                    thumbnailUrl: 'https://telegra.ph/file/2a06381b260c3f096a612.jpg', // This should match the image URL provided above
+                    renderLargerThumbnail: false,
+                    showAdAttribution: true
                 }
             }
-        }, { quoted: mek });
-
+     }, {quoted: mek});
     } catch (e) {
-        console.error("Error in ping command:", e);
-        reply(`An error occurred: ${e.message}`);
+        console.log(e)
+        reply(`${e}`)
     }
-});
