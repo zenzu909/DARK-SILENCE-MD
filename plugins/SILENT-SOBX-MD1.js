@@ -83,7 +83,7 @@ ${translatedTafsirEnglish.text}
     await conn.sendMessage(
       from,
       {
-        image: { url: `https://github.com/Awais-star-a11y/TESTING-REPO/raw/refs/heads/main/FB_IMG_1746456157477.jpg` },
+        image: { url: `https://files.catbox.moe/amnz0b` },
         caption: quranSurah,
         contextInfo: {
           mentionedJid: [m.sender], 
