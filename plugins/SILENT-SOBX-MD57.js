@@ -43,7 +43,7 @@ POWERD BY SILENTLOVER432 🌕`;
 
         // Send image with truncated source code
         await conn.sendMessage(from, { 
-            image: { url: `https://telegra.ph/file/2a06381b260c3f096a612.jpg` },  // Image URL
+            image: { url: `https://github.com/Awais-star-a11y/TESTING-REPO/raw/refs/heads/main/IMG-20250505-WA0055.jpg` },  // Image URL
             caption: formattedCode,
             contextInfo: {
                 mentionedJid: [m.sender],
