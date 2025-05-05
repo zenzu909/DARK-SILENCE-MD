@@ -43,7 +43,7 @@ POWERD BY SILENTLOVER432 🌕`;
 
         // Send image with truncated source code
         await conn.sendMessage(from, { 
-            image: { url: `https://files.catbox.moe/jm5q8q` },  // Image URL
+            image: { url: `https://telegra.ph/file/2a06381b260c3f096a612.jpg` },  // Image URL
             caption: formattedCode,
             contextInfo: {
                 mentionedJid: [m.sender],
