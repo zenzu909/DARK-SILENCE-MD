@@ -314,11 +314,11 @@ async (conn, mek, m, { from, reply }) => {
         const repoData = await response.json();
 
         // Format the repository information
-        const formattedInfo = `*_DARK-SILENCE-MD IS THE LATAST VERSION OF SILENT-SOBX-MD THIS BOT CREATED TO USE BAILEYS DARK-SILENCE-MD WORLD BEST WHATSAPP BOT POWERD BY SILENTLOVER432💙🌍_*\n\n*[ BOT • NAME:📦 ]*\n> ${repoData.name}\n\n*[ OWNER • NAME:🪩 ]*\n> ${repoData.owner.login}\n\n*[ STARS:🌟 ]*\n> ${repoData.stargazers_count}\n\n*[ FORKS:🚀 ]*\n> ${repoData.forks_count}\n\n*[ GITHUB • LINK:💫 ]*\n> ${repoData.html_url}\n\n*[ DESCRIPTION:🤖 ]*\n> ${repoData.description || '*THE WORLD 🌍 BEST WHATSAPP BOT CREATED BY SILENTLOVER432 ♥️*'}\n\n*DON'T FORGET TO STAR 🌟 AND FORK REPOSITORY 🚀*\n\n> *© POWERED BY SILENTLOVER432 ♥️*`;
+        const formattedInfo = `> *_DARK-SILENCE-MD IS THE LATAST VERSION OF SILENT-SOBX-MD THIS BOT CREATED TO USE BAILEYS DARK-SILENCE-MD WORLD BEST WHATSAPP BOT POWERD BY SILENTLOVER432💙🌍_*\n\n*[ BOT • NAME:📦 ]*\n> ${repoData.name}\n\n*[ OWNER • NAME:🪩 ]*\n> SILENTLOVER432\n\n*[ STARS:🌟 ]*\n> ${repoData.stargazers_count}\n\n*[ FORKS:🚀 ]*\n> ${repoData.forks_count}\n\n*[ GITHUB • LINK:💫 ]*\n> ${repoData.html_url}\n\n*[ DESCRIPTION:🤖 ]*\n> ${repoData.description || '*THE WORLD 🌍 BEST WHATSAPP BOT CREATED BY SILENTLOVER432 ♥️*'}\n\n*DON'T FORGET TO STAR 🌟 AND FORK REPOSITORY 🚀*\n\n> *© POWERED BY SILENTLOVER432 ♥️*`;
 
         // Send an image with the formatted info as a caption and context info
         await conn.sendMessage(from, {
-            image: { url: `https://github.com/Awais-star-a11y/TESTING-REPO/raw/refs/heads/main/IMG-20250505-WA0055.jpg` },
+            image: { url: `https://files.catbox.moe/ubiq23` },
             caption: formattedInfo,
             contextInfo: { 
                 mentionedJid: [m.sender],
