@@ -83,7 +83,7 @@ ${translatedTafsirEnglish.text}
     await conn.sendMessage(
       from,
       {
-        image: { url: `https://files.catbox.moe/8fy6up.jpg` },
+        image: { url: `https://github.com/Awais-star-a11y/TESTING-REPO/raw/refs/heads/main/FB_IMG_1746456157477.jpg` },
         caption: quranSurah,
         contextInfo: {
           mentionedJid: [m.sender], 
@@ -472,7 +472,7 @@ async (conn, mek, m, { from, quoted, body,isCmd, command, args, q, isGroup, send
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/8fy6up.jpg` },
+                image: { url: `https://github.com/Awais-star-a11y/TESTING-REPO/raw/refs/heads/main/FB_IMG_1746456157477.jpg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
