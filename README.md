@@ -178,7 +178,7 @@ jobs:
 `HII DEARS FRIENDS IF YOU WANT ANY HELP SO YOU CAN CONTACT↘︎ WITH ME WIA WHATSAPP ITS ME ♡SILENT LOVER⁴³²࿐➺`
 
 <p align="">
-<a href='https://wa.me/+923096287432?text=*HII+SIR+I+NEDD+HELP!.+I'M+MSG+YOU+FROM+DARK-SILENCE+MD!!*' target="_blank"><img alt='Replit' src='https://img.shields.io/badge/ Whatsapp -25D366?style=for-the-badge&logo=whatsapp&logoColor=white'/< width=150 height=28/p></a> </a>
+<a href='https://wa.me/+923096287432?text=*HII+SIR+I+NEDD+HELP!.+IM+MSG+YOU+FROM+DARK-SILENCE+MD!!*' target="_blank"><img alt='Replit' src='https://img.shields.io/badge/ Whatsapp -25D366?style=for-the-badge&logo=whatsapp&logoColor=white'/< width=150 height=28/p></a> </a>
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
 
