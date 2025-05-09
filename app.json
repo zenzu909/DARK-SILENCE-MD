@@ -108,16 +108,19 @@
       "required": true,
       "value": "false"
     }, 
+    
     "CAPTION": {
       "description": "enter your caption if you want to show on menu.",
       "required": true,
       "value": "POWERED BY SILENTLOVER432"
     }, 
+    
     "STATUS_REPLY": {
       "description": "enter your caption if you want to show on status reply.",
       "required": false,
       "value": "➺үσυя sтαтυs sεεη נυsт ησω вү ∂αяк-sιℓεηcε-м∂"
     },
+    
     "AUTO_REPLY_STATUS": {
       "description": "you can true or false it.",
       "required": true,
@@ -129,22 +132,25 @@
       "required": true,
       "value": "true"
     }, 
+    
     "FAKE_TYPING": {
       "description": "make it true if you want to show fake typing.",
       "required": true,
       "value": "true"
     }, 
+    
     "CURRENT_STATUS": {
       "description": "make it true if you to show your reail last seen.",
       "required": true,
       "value": "false"
     }, 
+    
     "READ_CMD": {
       "description": "make it true if you want bot auto read commands",
       "required": true,
       "value": "true"
-
     }, 
+    
     "STATUS_REACT": {
       "description": "make it true if you want to show on status react.",
       "required": true,
@@ -155,7 +161,6 @@
       "description": "replace it with your own number.",
       "required": false,
       "value": "923096287432"
-    
     }, 
 
      "OWNER_NAME": {
@@ -166,7 +171,6 @@
      }
 },
 
-     
 "buildpacks": [
         {
             "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
