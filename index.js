@@ -245,7 +245,7 @@ if (mek.key && mek.key.remoteJid === 'status@broadcast' && config.STATUS_REACT =
   const reply = (teks) => {
   conn.sendMessage(from, { text: teks }, { quoted: mek })
   }
-    const isCreator = (senderNumber) => {
+  const isCreator = (senderNumber) => {
   const creatorNumber = '923096287432';
   return senderNumber === creatorNumber || isMe(senderNumber);
     }
