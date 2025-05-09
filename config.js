@@ -59,5 +59,5 @@ module.exports = {
     STATUS_REACT: process.env.STATUS_REACT || "true",
     ANTI_VV: process.env.ANTI_VV || "true",// true for anti once view 
     ANTI_DEL_PATH: process.env.ANTI_DEL_PATH || "same", // change it to 'log' if you want to resend deleted message in ib chat 
-    OMDB_API_KEY: process.env.OMDB_API_KEY || "76cb7f39", // omdbapi.com
+    OMDB_API_KEY: process.env.OMDB_API_KEY || "76cb7f39"// omdbapi.com
 };
