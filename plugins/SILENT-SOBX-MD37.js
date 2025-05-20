@@ -47,6 +47,9 @@ const {runtime} = require('../lib/functions')
 const axios = require('axios')
 const {sleep} = require('../lib/functions')
 const fetch = require('node-fetch');
+function isEnabled(value) {
+    // Function to check if a value represents a "true" boolean state
+    return value && value.toString().toLowerCase() === "true";
 
 cmd({
     pattern: "restart",
@@ -92,11 +95,12 @@ async(conn, mek, m,{from, l, quoted, body, isCmd, umarmd, args, q, isGroup, send
 
 try{
 if (!isOwner) return reply("You're not bot owner 🪄.");
+const isEnabled = (value) => value && value.toString().toLowerCase() === "true";
 let madeSetting =`
-*[ •  DARK-SILENCE-MD - SETTINGS‎ • ]*
-*╭━━━〔 SETTING-LIST 📃 〕━━━┈⊷*
+*[ •  𝔻𝔸ℝ𝕂-𝕊𝕀𝕃𝔼ℕℂ𝔼-𝕄𝔻 - 𝕊𝔼𝕋𝕋𝕀ℕ𝔾𝕊‎ • ]*
+*╭━━━〔 📃 𝐒𝐄𝐓𝐓𝐈𝐍𝐆𝐒-𝐋𝐈𝐒𝐓 📃 〕━━━┈⊷*
 *┃★╭──────────────*
-*┃◈┃•* *♾️ AUTO_READ_STATUS:* ➠ ${config.AUTO_READ_STATUS}
+*┃◈┃•* *♾️ AUTO_READ_STATUS:* ➠ ${isEnabled(config.AUTO_READ_STATUS) ? "✅" : "❌"}
 *┃◈┃•* *♾️ MODE:* ➠ ${config.MODE} 
 *┃◈┃•* *♾️ AUTO_VOICE:* ➠ ${config.AUTO_VOICE} 
 *┃◈┃•* *♾️ AUTO_STICKER:* ➠ ${config.AUTO_STICKER} 
@@ -137,7 +141,7 @@ mentionedJid: [m.sender],
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '120363189714152560@newsletter',
-                    newsletterName: 'sιℓεηт-sσвx-м∂',
+                    newsletterName: '𝐃𝐀𝐑𝐊-𝐒𝐈𝐋𝐄𝐍𝐂𝐄-𝐌𝐃',
                     serverMessageId: 143
                 }
             }
