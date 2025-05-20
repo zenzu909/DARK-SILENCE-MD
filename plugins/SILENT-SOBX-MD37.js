@@ -98,36 +98,52 @@ try{
 if (!isOwner) return reply("You're not bot owner 🪄.");
 const isEnabled = (value) => value && value.toString().toLowerCase() === "true";
 let madeSetting =`
-*[ •  DARK-SILENCE-MD - SETTINGS‎ • ]*
-*╭━━━〔 SETTING-LIST 📃 〕━━━┈⊷*
-*┃★╭──────────────*
-*┃◈┃•* *♾️ AUTO_READ_STATUS:* ➠ ${isEnabled(config.AUTO_READ_STATUS) ? "✅" : "❌"}
-*┃◈┃•* *♾️ MODE:* ➠ ${config.MODE} 
-*┃◈┃•* *♾️ AUTO_VOICE:* ➠ ${config.AUTO_VOICE} 
-*┃◈┃•* *♾️ AUTO_STICKER:* ➠ ${config.AUTO_STICKER} 
-*┃◈┃•* *♾️ AUTO_REPLY:* ➠ ${config.AUTO_REPLY} 
-*┃◈┃•* *♾️ ALIVE_IMG:* ➠ ${config.ALIVE_IMG} 
-*┃◈┃•* *♾️ ALIVE_MSG:* ➠ ${config.ALIVE_MSG} 
-*┃◈┃•* *♾️ ANTI_LINK:* ➠ ${config.ANTI_LINK} 
-*┃◈┃•* *♾️ ANTI_BAD:* ➠ ${config.ANTI_BAD} 
-*┃◈┃•* *♾️ PREFIX:* ➠ [${config.PREFIX}]
-*┃◈┃•* *♾️ FAKE_RECORDING:* ➠ ${config.FAKE_RECORDING}
-*┃◈┃•* *♾️ FAKE_TYPING:* ➠ ${config.FAKE_TYPING}
-*┃◈┃•* *♾️ AUTO_REACT:* ➠ ${config.AUTO_REACT} 
-*┃◈┃•* *♾️ HEART_REACT:* ➠ ${config.HEART_REACT} 
-*┃◈┃•* *♾️ AUTO_REPLY_STATUS:* ➠ ${config.AUTO_REPLY_STATUS} 
-*┃◈┃•* *♾️ BOT_NAME:* ➠ ${config.BOT_NAME}
-*┃◈┃•* *♾️ READ_MESSAGE:* ➠ ${config.READ_MESSAGE}
-*┃◈┃•* *♾️ READ_CMD:* ➠ ${config.READ_CMD}
-*┃◈┃•* *♾️ CAPTION:* ➠ ${config.CAPTION}
-*┃◈┃•* *♾️ ALWAYS_ONLINE:* ➠ ${config.ALWAYS_ONLINE}
-*┃◈┃•* *♾️ CURRENT_STATUS:* ➠ ${config.CURRENT_STATUS}
-*┃◈┃•* *♾️ STATUS_REPLY:* ➠ ${config.STATUS_REPLY}
-*┃◈┃•* *♾️ STATUS_REACT:* ➠ ${config.STATUS_REACT}
-*┃◈┃•* *♾️ ANTI_DEL_PATH:* ➠ ${config.ANTI_DEL_PATH}
+*[ •  𝔻𝔸ℝ𝕂-𝕊𝕀𝕃𝔼ℕℂ𝔼-𝕄𝔻 - 𝕊𝔼𝕋𝕋𝕀ℕ𝔾𝕊‎ • ]*
+*🂱━━━〔 📃 𝐒𝐄𝐓𝐓𝐈𝐍𝐆𝐒 𝐋𝐈𝐒𝐓 📃 〕━━━🂱*
+*[ •  🂱 𝐀𝐔𝐓𝐎 • 𝐒𝐄𝐓𝐓𝐈𝐍𝐆𝐒 🂱  • ]*
+*╭━━━━━━━━━━━━━━━━━┈⊷*
+*┃★╭━━━━━━━━━━━┈⊷*
+*┃◈┃•* *🂱 AUTO_READ_STATUS:* ➠ ${isEnabled(config.AUTO_READ_STATUS) ? "✅" : "❌"}
+*┃◈┃•* *🂱 AUTO_REPLY_STATUS:* ➠ ${isEnabled(config.AUTO_REPLY_STATUS) ? "✅" : "❌"}
+*┃◈┃•* *🂱 AUTO_VOICE:* ➠ ${isEnabled(config.AUTO_VOICE) ? "✅" : "❌"}
+*┃◈┃•* *🂱 AUTO_STICKER:* ➠ ${isEnabled(config.AUTO_STICKER) ? "✅" : "❌"}
+*┃◈┃•* *🂱 AUTO_REPLY:* ➠ ${isEnabled(config.AUTO_REPLY) ? "✅" : "❌"}
+*┃◈┃•* *🂱 AUTO_REACT:* ➠ ${isEnabled(config.AUTO_REACT) ? "✅" : "❌"}
+*┃◈┃•* *🂱 HEART_REACT:* ➠ ${isEnabled(config.HEART_REACT) ? "✅" : "❌"}
+*┃◈┃•* *🂱 STATUS_REACT:* ➠ ${isEnabled(config.STATUS_REACT) ? "✅" : "❌"}
 *┃★╰──────────────*
 *╰━━━━━━━━━━━━━━━┈⊷*
-
+*[ •  🂱 𝐌𝐄𝐃𝐈𝐀 • 𝐒𝐄𝐓𝐓𝐈𝐍𝐆𝐒 🂱  • ]*
+*╭━━━━━━━━━━━━━━━━━┈⊷*
+*┃★╭━━━━━━━━━━━┈⊷*
+*┃◈┃•* *🂱 ALIVE_IMG:* ➠ ${config.ALIVE_IMG}
+*┃◈┃•* *🂱 ALIVE_MSG:* ➠ ${config.ALIVE_MSG} 
+*┃◈┃•* *🂱 BOT_NAME:* ➠ ${config.BOT_NAME}
+*┃◈┃•* *🂱 CAPTION:* ➠ ${config.CAPTION}
+*┃◈┃•* *🂱 STATUS_REPLY:* ➠ ${config.STATUS_REPLY}
+*┃★╰──────────────*
+*╰━━━━━━━━━━━━━━━┈⊷*
+*[ •  🂱 𝐒𝐄𝐂𝐔𝐑𝐈𝐓𝐘 • 𝐒𝐄𝐓𝐓𝐈𝐍𝐆𝐒 🂱  • ]*
+*╭━━━━━━━━━━━━━━━━━┈⊷*
+*┃★╭━━━━━━━━━━━┈⊷*
+*┃◈┃•* *🂱 ALWAYS_ONLINE:* ➠ ${isEnabled(config.ALWAYS_ONLINE) ? "✅" : "❌"}
+*┃◈┃•* *🂱 ANTI_LINK:* ➠ ${isEnabled(config.ANTI_LINK) ? "✅" : "❌"}
+*┃◈┃•* *🂱 ANTI_BAD:* ➠ ${isEnabled(config.ANTI_BAD) ? "✅" : "❌"}
+*┃◈┃•* *🂱 CURRENT_STATUS:* ➠ ${isEnabled(config.CURRENT_STATUS) ? "✅" : "❌"}
+*┃◈┃•* *🂱 FAKE_RECORDING:* ➠ ${isEnabled(config.FAKE_RECORDING) ? "✅" : "❌"}
+*┃◈┃•* *🂱 FAKE_TYPING:* ➠ ${isEnabled(config.FAKE_RECORDING) ? "✅" : "❌"}
+*┃◈┃•* *🂱 READ_MESSAGE:* ➠ ${isEnabled(config.READ_MESSAGE) ? "✅" : "❌"}
+*┃◈┃•* *🂱 READ_CMD:* ➠ ${isEnabled(config.READ_CMD) ? "✅" : "❌"}
+*┃★╰──────────────*
+*╰━━━━━━━━━━━━━━━┈⊷*
+*[ •  🂱 𝐒𝐘𝐒𝐓𝐄𝐌 • 𝐒𝐄𝐓𝐓𝐈𝐍𝐆𝐒 🂱  • ]*
+*╭━━━━━━━━━━━━━━━━━┈⊷*
+*┃★╭━━━━━━━━━━━┈⊷*
+*┃◈┃•* *🂱 MODE:* ➠ ${config.MODE} 
+*┃◈┃•* *🂱 PREFIX:* ➠ [${config.PREFIX}]
+*┃◈┃•* *🂱 ANTI_DEL_PATH:* ➠ ${config.ANTI_DEL_PATH}
+*┃★╰──────────────*
+*╰━━━━━━━━━━━━━━━┈⊷*
 *•────────────•⟢*
 > © ᴘᴏᴡᴇʀᴇᴅ ʙʏ sɪʟᴇɴᴛʟᴏᴠᴇʀ⁴³²
 *•────────────•⟢*
