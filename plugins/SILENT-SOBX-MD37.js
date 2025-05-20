@@ -68,8 +68,12 @@ reply("*_DARK-SILENCE-MD SUCCESSFULLY RESTART...✨_*")
 console.log(e)
 reply(`${e}`)
 }
-})
+});
 
+function isEnabled(value) {
+    // Function to check if a value represents a "true" boolean state
+    return value && value.toString().toLowerCase() === "true";
+}
 cmd({
 
     pattern: "settings",
@@ -92,11 +96,12 @@ async(conn, mek, m,{from, l, quoted, body, isCmd, umarmd, args, q, isGroup, send
 
 try{
 if (!isOwner) return reply("You're not bot owner 🪄.");
+const isEnabled = (value) => value && value.toString().toLowerCase() === "true";
 let madeSetting =`
 *[ •  DARK-SILENCE-MD - SETTINGS‎ • ]*
 *╭━━━〔 SETTING-LIST 📃 〕━━━┈⊷*
 *┃★╭──────────────*
-*┃◈┃•* *♾️ AUTO_READ_STATUS:* ➠ ${config.AUTO_READ_STATUS}
+*┃◈┃•* *♾️ AUTO_READ_STATUS:* ➠ ${isEnabled(config.AUTO_READ_STATUS) ? "✅" : "❌"}
 *┃◈┃•* *♾️ MODE:* ➠ ${config.MODE} 
 *┃◈┃•* *♾️ AUTO_VOICE:* ➠ ${config.AUTO_VOICE} 
 *┃◈┃•* *♾️ AUTO_STICKER:* ➠ ${config.AUTO_STICKER} 
