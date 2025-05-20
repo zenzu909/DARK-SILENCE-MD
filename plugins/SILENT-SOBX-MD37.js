@@ -47,9 +47,6 @@ const {runtime} = require('../lib/functions')
 const axios = require('axios')
 const {sleep} = require('../lib/functions')
 const fetch = require('node-fetch');
-function isEnabled(value) {
-    // Function to check if a value represents a "true" boolean state
-    return value && value.toString().toLowerCase() === "true";
 
 cmd({
     pattern: "restart",
@@ -71,7 +68,12 @@ reply("*_DARK-SILENCE-MD SUCCESSFULLY RESTART...✨_*")
 console.log(e)
 reply(`${e}`)
 }
-})
+});
+
+
+function isEnabled(value) {
+    // Function to check if a value represents a "true" boolean state
+    return value && value.toString().toLowerCase() === "true";
 
 cmd({
 
