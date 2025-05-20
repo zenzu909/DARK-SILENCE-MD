@@ -140,21 +140,21 @@ console.log("SESSION DOWNLOADED SUCCESSFULLY ✅")
   console.log('DARK-SILENCE-MD CONNECTED SUCCESSFULLY ✅')
   
   let up = `
-╭─ 「 *[ •  DARK-SILENCE-MD - STARTED‎ • ]* 」
+╭─ 「 *[ •  𝔻𝔸ℝ𝕂-𝕊𝕀𝕃𝔼ℕℂ𝔼-𝕄𝔻 - 𝕊𝕋𝔸ℝ𝕋𝔼𝔻‎ • ]* 」
 ┊  ╭───────────❂
-┊🩶┊ *THIS PROJECT CREATED TO USE SILENT-SOBX-MD SCRIPT DARK-SILENCE-MD IS THE UPDATE VERSION OF SILENT-SOBX-MD ♻️*
+┊🩶┊ *🂱 THIS PROJECT CREATED TO USE SILENT-SOBX-MD SCRIPT DARK-SILENCE-MD IS THE UPDATE VERSION OF SILENT-SOBX-MD ♻️*
 ┊  ╰──────────❂
 ╰─────────────❂
 
-╭─ 「 *[ •  B O T  - R E P O ‎ • ]* 」
+╭─ 「 *[ •  𝔻𝔸ℝ𝕂-𝕊𝕀𝕃𝔼ℕℂ𝔼-𝕄𝔻  - ℝ𝔼ℙ𝕆 ‎ • ]* 」
 ┊  ╭───────────❂
-┊📄┊ *https://github.com/DARKSILENCE04/DARK-SILENCE-MD*
+┊📄┊ *🂱 https://github.com/DARKSILENCE04/DARK-SILENCE-MD*
 ┊  ╰──────────❂
 ╰─────────────❂
-*DARK-SILENCE-MD ACTIVE NOW!♻️*\n\n*YOUR-PREFIX: [${prefix}]*
+*🂱 𝑫𝑨𝑹𝑲-𝑺𝑰𝑳𝑬𝑵𝑪𝑬-𝑴𝑫 𝑨𝑪𝑻𝑰𝑽𝑨𝑻𝑬 𝑵𝑶𝑾!♻️*\n\n*𝒀𝑶𝑼𝑹-𝑷𝑹𝑬𝑭𝑰𝑿: [${prefix}]*
 
 *•────────────•⟢*
-> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ sɪʟᴇɴᴛʟᴏᴠᴇʀ⁴³²
+> *© ℙ𝕆𝕎𝔼ℝ𝔼𝔻 𝔹𝕐 𝕊𝕀𝕃𝔼ℕ𝕋𝕃𝕆𝕍𝔼ℝ432*
 *•────────────•⟢*
 `;
 conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/ubiq23` }, caption: up })
