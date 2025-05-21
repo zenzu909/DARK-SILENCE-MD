@@ -158,7 +158,7 @@ mentionedJid: [m.sender],
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '120363189714152560@newsletter',
-                    newsletterName: 'sιℓεηт-sσвx-м∂',
+                    newsletterName: '𝘿𝘼𝙍𝙆-𝙎𝙄𝙇𝙀𝙉𝘾𝙀-𝙈𝘿',
                     serverMessageId: 143
                 }
             }
